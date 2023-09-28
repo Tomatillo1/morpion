@@ -7,8 +7,22 @@
     <link href="jeu.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Morpion</h1>
-    <p class="turn">Au tour de <span class="changeColor">prénom</span> de jouer :</p>
+    <div class="header">
+        <button type="button" class="return">Retour</button>
+        <h1>Morpion</h1>
+    </div>
+    <p class="turn">Au tour de <span class="changeColor"></span> de jouer :</p>
+    <div class="popupContainer">
+        <div class="shadow"></div>
+        <div class="popup">
+            <p class="announceWinner">Le gagnant de la partie est :</p>
+            <p class="winnerPlayer"></p>
+            <div class="buttonBarMenu">
+                <button class="menuButton">Menu</button>
+                <button class="replay">Rejouer</button>
+            </div>
+        </div>
+    </div>
     <div class="game">
         <div class="playerOne">
             <h2>J1</h2>

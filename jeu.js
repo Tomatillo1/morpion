@@ -8,6 +8,11 @@ changeColor.innerHTML = name1;
 const changeScore1 = document.querySelector(".score1");
 const changeScore2 = document.querySelector(".score2");
 const buttons = document.querySelectorAll(".block");
+const returnButton = document.querySelector(".return");
+const popup = document.querySelector(".popupContainer");
+const winner1 = document.querySelector(".winnerPlayer");
+const returnToMenu = document.querySelector(".menuButton")
+const replayGame = document.querySelector(".replay");
 
 buttons.forEach((button)=>{
     button.addEventListener("click", ()=>{
@@ -45,7 +50,10 @@ function checkLine1 () {
             if (buttons[2].innerHTML === "X") {
                 let newScore1 = Number(changeScore1.innerHTML) + 1
                 document.querySelector(".score1").innerHTML = newScore1.toString()
-                alert("youpi")
+                popup.style.display = "block"
+                winner1.innerHTML = name1
+                winner1.classList.remove("changeColor2")
+                winner1.classList.add("changeColor")
             }
         }
     } else if (buttons[0].innerHTML === "O") {
@@ -53,7 +61,10 @@ function checkLine1 () {
             if (buttons[2].innerHTML === "O") {
                 let newScore2 = Number(changeScore2.innerHTML) + 1
                 document.querySelector(".score2").innerHTML = newScore2.toString()
-                alert("Hourra")
+                popup.style.display = "block"
+                winner1.innerHTML = name2
+                winner1.classList.remove("changeColor")
+                winner1.classList.add("changeColor2")
             }
         }
     }
@@ -65,7 +76,10 @@ function checkLine2 () {
             if (buttons[5].innerHTML === "X") {
                 let newScore1 = Number(changeScore1.innerHTML) + 1
                 document.querySelector(".score1").innerHTML = newScore1.toString()
-                alert("youpi")
+                popup.style.display = "block"
+                winner1.innerHTML = name1
+                winner1.classList.remove("changeColor2")
+                winner1.classList.add("changeColor")
             }
         }
     } else if (buttons[3].innerHTML === "O") {
@@ -73,7 +87,10 @@ function checkLine2 () {
             if (buttons[5].innerHTML === "O") {
                 let newScore2 = Number(changeScore2.innerHTML) + 1
                 document.querySelector(".score2").innerHTML = newScore2.toString()
-                alert("Hourra")
+                popup.style.display = "block"
+                winner1.innerHTML = name2
+                winner1.classList.remove("changeColor")
+                winner1.classList.add("changeColor2")
             }
         }
     }
@@ -85,7 +102,10 @@ function checkLine3 () {
             if (buttons[8].innerHTML === "X") {
                 let newScore1 = Number(changeScore1.innerHTML) + 1
                 document.querySelector(".score1").innerHTML = newScore1.toString()
-                alert("youpi")
+                popup.style.display = "block"
+                winner1.innerHTML = name1
+                winner1.classList.remove("changeColor2")
+                winner1.classList.add("changeColor")
             }
         }
     } else if (buttons[6].innerHTML === "O") {
@@ -93,7 +113,10 @@ function checkLine3 () {
             if (buttons[8].innerHTML === "O") {
                 let newScore2 = Number(changeScore2.innerHTML) + 1
                 document.querySelector(".score2").innerHTML = newScore2.toString()
-                alert("Hourra")
+                popup.style.display = "block"
+                winner1.innerHTML = name2
+                winner1.classList.remove("changeColor")
+                winner1.classList.add("changeColor2")
             }
         }
     }
@@ -105,7 +128,10 @@ function checkLine4 () {
             if (buttons[6].innerHTML === "X") {
                 let newScore1 = Number(changeScore1.innerHTML) + 1
                 document.querySelector(".score1").innerHTML = newScore1.toString()
-                alert("youpi")
+                popup.style.display = "block"
+                winner1.innerHTML = name1
+                winner1.classList.remove("changeColor2")
+                winner1.classList.add("changeColor")
             }
         }
     } else if (buttons[0].innerHTML === "O") {
@@ -113,7 +139,10 @@ function checkLine4 () {
             if (buttons[6].innerHTML === "O") {
                 let newScore2 = Number(changeScore2.innerHTML) + 1
                 document.querySelector(".score2").innerHTML = newScore2.toString()
-                alert("Hourra")
+                popup.style.display = "block"
+                winner1.innerHTML = name2
+                winner1.classList.remove("changeColor")
+                winner1.classList.add("changeColor2")
             }
         }
     }
@@ -125,7 +154,10 @@ function checkLine5 () {
             if (buttons[7].innerHTML === "X") {
                 let newScore1 = Number(changeScore1.innerHTML) + 1
                 document.querySelector(".score1").innerHTML = newScore1.toString()
-                alert("youpi")
+                popup.style.display = "block"
+                winner1.innerHTML = name1
+                winner1.classList.remove("changeColor2")
+                winner1.classList.add("changeColor")
             }
         }
     } else if (buttons[1].innerHTML === "O") {
@@ -133,7 +165,10 @@ function checkLine5 () {
             if (buttons[7].innerHTML === "O") {
                 let newScore2 = Number(changeScore2.innerHTML) + 1
                 document.querySelector(".score2").innerHTML = newScore2.toString()
-                alert("Hourra")
+                popup.style.display = "block"
+                winner1.innerHTML = name2
+                winner1.classList.remove("changeColor")
+                winner1.classList.add("changeColor2")
             }
         }
     }
@@ -145,7 +180,10 @@ function checkLine6 () {
             if (buttons[8].innerHTML === "X") {
                 let newScore1 = Number(changeScore1.innerHTML) + 1
                 document.querySelector(".score1").innerHTML = newScore1.toString()
-                alert("youpi")
+                popup.style.display = "block"
+                winner1.innerHTML = name1
+                winner1.classList.remove("changeColor2")
+                winner1.classList.add("changeColor")
             }
         }
     } else if (buttons[2].innerHTML === "O") {
@@ -153,7 +191,10 @@ function checkLine6 () {
             if (buttons[8].innerHTML === "O") {
                 let newScore2 = Number(changeScore2.innerHTML) + 1
                 document.querySelector(".score2").innerHTML = newScore2.toString()
-                alert("Hourra")
+                popup.style.display = "block"
+                winner1.innerHTML = name2
+                winner1.classList.remove("changeColor")
+                winner1.classList.add("changeColor2")
             }
         }
     }
@@ -165,7 +206,10 @@ function checkLine7 () {
             if (buttons[8].innerHTML === "X") {
                 let newScore1 = Number(changeScore1.innerHTML) + 1
                 document.querySelector(".score1").innerHTML = newScore1.toString()
-                alert("youpi")
+                popup.style.display = "block"
+                winner1.innerHTML = name1
+                winner1.classList.remove("changeColor2")
+                winner1.classList.add("changeColor")
             }
         }
     } else if (buttons[0].innerHTML === "O") {
@@ -173,7 +217,10 @@ function checkLine7 () {
             if (buttons[8].innerHTML === "O") {
                 let newScore2 = Number(changeScore2.innerHTML) + 1
                 document.querySelector(".score2").innerHTML = newScore2.toString()
-                alert("Hourra")
+                popup.style.display = "block"
+                winner1.innerHTML = name2
+                winner1.classList.remove("changeColor")
+                winner1.classList.add("changeColor2")
             }
         }
     }
@@ -185,7 +232,10 @@ function checkLine8 () {
             if (buttons[6].innerHTML === "X") {
                 let newScore1 = Number(changeScore1.innerHTML) + 1
                 document.querySelector(".score1").innerHTML = newScore1.toString()
-                alert("youpi")
+                popup.style.display = "block"
+                winner1.innerHTML = name1
+                winner1.classList.remove("changeColor2")
+                winner1.classList.add("changeColor")
             }
         }
     } else if (buttons[2].innerHTML === "O") {
@@ -193,8 +243,27 @@ function checkLine8 () {
             if (buttons[6].innerHTML === "O") {
                 let newScore2 = Number(changeScore2.innerHTML) + 1
                 document.querySelector(".score2").innerHTML = newScore2.toString()
-                alert("Hourra")
+                popup.style.display = "block"
+                winner1.innerHTML = name2
+                winner1.classList.remove("changeColor")
+                winner1.classList.add("changeColor2")
             }
         }
     }
 }
+
+returnButton.addEventListener("click", () => {
+    returnMenu()
+})
+
+returnToMenu.addEventListener("click", () => {
+    returnMenu()
+})
+
+function returnMenu () {
+    history.back()
+}
+
+replayGame.addEventListener("click", () => {
+    location.reload()
+})
