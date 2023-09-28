@@ -2,9 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jouez</title>
+    <link href="jeu.css" rel="stylesheet" />
 </head>
 <body>
-
+    <h1>Morpion</h1>
+    <p class="turn">Au tour de <span class="changeColor">prénom</span> de jouer :</p>
+    <div class="game">
+        <div class="playerOne">
+            <h2>J1</h2>
+            <p class="name1">Nomdujoueur1</p>
+            <p class="score1">0</p>
+        </div>
+        <div class="gameplay">
+            <div class="cases">
+                <button type="button" class="buttonOne block"></button>
+                <button type="button" class="buttonTwo block"></button>
+                <button type="button" class="buttonThree block"></button>
+                <button type="button" class="buttonFour block"></button>
+                <button type="button" class="buttonFive block"></button>
+                <button type="button" class="buttonSix block"></button>
+                <button type="button" class="buttonSeven block"></button>
+                <button type="button" class="buttonEight block"></button>
+                <button type="button" class="buttonNine block"></button>
+            </div>
+        </div>
+        <div class="playerTwo">
+            <h2>J2</h2>
+            <p class="name2">Nomdujoueur2</p>
+            <p class="score2">0</p>
+        </div>
+    </div>
 </body>
+<script type="text/javascript" src="jeu.js"></script>
 </html>

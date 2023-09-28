@@ -3,7 +3,11 @@ let buttonPlay = document.querySelector(".play");
 buttonPlay.addEventListener("click", ()=>{
     let player1 = document.getElementById("firstname1").value
     let player2 = document.getElementById("firstname2").value
-    let url = new URL("http://localhost:63342/morpion/jeu.html")
+    let lastUrl = window.location.href
+    let replaceUrl = lastUrl.replace(/\?.*/,'')
+    let finalUrl = replaceUrl.replace(/index.html/i, "jeu.html")
+
+    let url = new URL(finalUrl)
     let parameters = url.searchParams
     parameters.set("name1", player1)
     parameters.set("name2", player2)

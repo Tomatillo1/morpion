@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin: 0;
+    height: 100svh;
+    gap: 1.5rem;
+}
+
+.turn {
+    color: white;
+    font-family: "Poppins", sans-serif ;
+    align-self: center;
+    margin-bottom:0;
+    border: 1px solid white;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.game {
+    display: flex;
+    height: 100%;
+}
+
+.playerOne, .playerTwo {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+h1 {
+    color: white;
+    font-family: "Poppins", sans-serif ;
+    font-size: 3rem;
+    align-self: center;
+    margin-bottom: 0;
+}
+
+h2, .score1, .score2 {
+    color: white;
+    font-family: "Poppins", sans-serif ;
+    border: 1px solid white;
+    margin: 0;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+}
+
+.gameplay {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cases {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 80%;
+    height: 80%;
+}
+
+.buttonOne, .buttonTwo, .buttonThree, .buttonFour, .buttonFive, .buttonSix, .buttonSeven, .buttonEight, .buttonNine {
+    padding: 0;
+}
+
+.buttonOne {
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.buttonTwo {
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.buttonThree {
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.buttonFour {
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.buttonFive {
+    background-color: black;
+    border:1px solid white;
+}
+
+.buttonSix {
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.buttonSeven {
+    background-color: black;
+    border: none;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.buttonEight {
+    background-color: black;
+    border: none;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.buttonNine {
+    background-color: black;
+    border: none;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.name1, .name2 {
+    font-family: "Poppins", sans-serif ;
+    margin: 0;
+    border: 1px solid white;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.name1, .changeColor, .score1 {
+    color: #E30D00;
+}
+
+.name2, .changeColor2, .score2 {
+    color: #E0BB00;
+}
+
+.block {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 4rem;
+}
+
+.score1, .score2 {
+    font-family: "Poppins", sans-serif;
+    border: 1px solid white;
+    margin: 0;
+    font-size: 2rem;
+    padding: 0.25rem 1.25rem 0.25rem 1.25rem;
+}
