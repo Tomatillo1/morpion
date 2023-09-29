@@ -13,6 +13,21 @@ const popup = document.querySelector(".popupContainer");
 const winner1 = document.querySelector(".winnerPlayer");
 const returnToMenu = document.querySelector(".menuButton")
 const replayGame = document.querySelector(".replay");
+takeTheValue = localStorage.getItem("theKey");
+takeTheValue2 = localStorage.getItem("theKey2");
+
+if (takeTheValue === null) {
+    document.querySelector(".score1").innerHTML = "0"
+} else {
+    document.querySelector(".score1").innerHTML = takeTheValue
+}
+
+if (takeTheValue2 === null) {
+    document.querySelector(".score2").innerHTML = "0"
+} else {
+    document.querySelector(".score2").innerHTML = takeTheValue2
+}
+
 
 buttons.forEach((button)=>{
     button.addEventListener("click", ()=>{
@@ -54,6 +69,8 @@ function checkLine1 () {
                 winner1.innerHTML = name1
                 winner1.classList.remove("changeColor2")
                 winner1.classList.add("changeColor")
+                let saveScore = document.querySelector(".score1").innerHTML
+                localStorage.setItem("theKey", saveScore)
             }
         }
     } else if (buttons[0].innerHTML === "O") {
@@ -65,6 +82,8 @@ function checkLine1 () {
                 winner1.innerHTML = name2
                 winner1.classList.remove("changeColor")
                 winner1.classList.add("changeColor2")
+                let saveScore2 = document.querySelector(".score2").innerHTML
+                localStorage.setItem("theKey2", saveScore2)
             }
         }
     }
@@ -80,6 +99,8 @@ function checkLine2 () {
                 winner1.innerHTML = name1
                 winner1.classList.remove("changeColor2")
                 winner1.classList.add("changeColor")
+                let saveScore = document.querySelector(".score1").innerHTML
+                localStorage.setItem("theKey", saveScore)
             }
         }
     } else if (buttons[3].innerHTML === "O") {
@@ -91,6 +112,8 @@ function checkLine2 () {
                 winner1.innerHTML = name2
                 winner1.classList.remove("changeColor")
                 winner1.classList.add("changeColor2")
+                let saveScore2 = document.querySelector(".score2").innerHTML
+                localStorage.setItem("theKey2", saveScore2)
             }
         }
     }
@@ -106,6 +129,8 @@ function checkLine3 () {
                 winner1.innerHTML = name1
                 winner1.classList.remove("changeColor2")
                 winner1.classList.add("changeColor")
+                let saveScore = document.querySelector(".score1").innerHTML
+                localStorage.setItem("theKey", saveScore)
             }
         }
     } else if (buttons[6].innerHTML === "O") {
@@ -117,6 +142,8 @@ function checkLine3 () {
                 winner1.innerHTML = name2
                 winner1.classList.remove("changeColor")
                 winner1.classList.add("changeColor2")
+                let saveScore2 = document.querySelector(".score2").innerHTML
+                localStorage.setItem("theKey2", saveScore2)
             }
         }
     }
@@ -132,6 +159,8 @@ function checkLine4 () {
                 winner1.innerHTML = name1
                 winner1.classList.remove("changeColor2")
                 winner1.classList.add("changeColor")
+                let saveScore = document.querySelector(".score1").innerHTML
+                localStorage.setItem("theKey", saveScore)
             }
         }
     } else if (buttons[0].innerHTML === "O") {
@@ -143,6 +172,8 @@ function checkLine4 () {
                 winner1.innerHTML = name2
                 winner1.classList.remove("changeColor")
                 winner1.classList.add("changeColor2")
+                let saveScore2 = document.querySelector(".score2").innerHTML
+                localStorage.setItem("theKey2", saveScore2)
             }
         }
     }
@@ -158,6 +189,8 @@ function checkLine5 () {
                 winner1.innerHTML = name1
                 winner1.classList.remove("changeColor2")
                 winner1.classList.add("changeColor")
+                let saveScore = document.querySelector(".score1").innerHTML
+                localStorage.setItem("theKey", saveScore)
             }
         }
     } else if (buttons[1].innerHTML === "O") {
@@ -169,6 +202,8 @@ function checkLine5 () {
                 winner1.innerHTML = name2
                 winner1.classList.remove("changeColor")
                 winner1.classList.add("changeColor2")
+                let saveScore2 = document.querySelector(".score2").innerHTML
+                localStorage.setItem("theKey2", saveScore2)
             }
         }
     }
@@ -184,6 +219,8 @@ function checkLine6 () {
                 winner1.innerHTML = name1
                 winner1.classList.remove("changeColor2")
                 winner1.classList.add("changeColor")
+                let saveScore = document.querySelector(".score1").innerHTML
+                localStorage.setItem("theKey", saveScore)
             }
         }
     } else if (buttons[2].innerHTML === "O") {
@@ -195,6 +232,8 @@ function checkLine6 () {
                 winner1.innerHTML = name2
                 winner1.classList.remove("changeColor")
                 winner1.classList.add("changeColor2")
+                let saveScore2 = document.querySelector(".score2").innerHTML
+                localStorage.setItem("theKey2", saveScore2)
             }
         }
     }
@@ -210,6 +249,8 @@ function checkLine7 () {
                 winner1.innerHTML = name1
                 winner1.classList.remove("changeColor2")
                 winner1.classList.add("changeColor")
+                let saveScore = document.querySelector(".score1").innerHTML
+                localStorage.setItem("theKey", saveScore)
             }
         }
     } else if (buttons[0].innerHTML === "O") {
@@ -221,6 +262,8 @@ function checkLine7 () {
                 winner1.innerHTML = name2
                 winner1.classList.remove("changeColor")
                 winner1.classList.add("changeColor2")
+                let saveScore = document.querySelector(".score1").innerHTML
+                localStorage.setItem("theKey", saveScore)
             }
         }
     }
@@ -236,6 +279,8 @@ function checkLine8 () {
                 winner1.innerHTML = name1
                 winner1.classList.remove("changeColor2")
                 winner1.classList.add("changeColor")
+                let saveScore = document.querySelector(".score1").innerHTML
+                localStorage.setItem("theKey", saveScore)
             }
         }
     } else if (buttons[2].innerHTML === "O") {
@@ -247,6 +292,8 @@ function checkLine8 () {
                 winner1.innerHTML = name2
                 winner1.classList.remove("changeColor")
                 winner1.classList.add("changeColor2")
+                let saveScore2 = document.querySelector(".score2").innerHTML
+                localStorage.setItem("theKey2", saveScore2)
             }
         }
     }
@@ -261,6 +308,7 @@ returnToMenu.addEventListener("click", () => {
 })
 
 function returnMenu () {
+    localStorage.clear()
     history.back()
 }
 
