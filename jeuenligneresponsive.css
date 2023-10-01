@@ -1,0 +1,126 @@
+@media screen and (max-width:767px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .return {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    }
+
+    body {
+        gap: 3rem;
+    }
+
+    .game {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .playerOne, .playerTwo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 10%;
+    }
+
+    .gameplay {
+        width: 100%;
+        height: 60%;
+    }
+
+    .block {
+        font-size: 3rem;
+    }
+
+    .popup {
+        width: 80%;
+        height: 55%;
+    }
+
+    .announceWinner {
+        text-align: center;
+    }
+
+    .winnerPlayer {
+        font-size: 3rem;
+    }
+
+    .buttonBarMenu {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    h1 {
+        font-size: 4rem;
+        margin-top: 2rem;
+    }
+
+    .return {
+        font-size: 2rem;
+        padding: 0.25rem 1rem 0.25rem 1rem;
+        top: 30px;
+        left: 30px;
+    }
+
+    .turn {
+        font-size: 2rem;
+    }
+
+    body {
+        gap: 2rem;
+    }
+
+    .game {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .playerOne, .playerTwo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 15%;
+        gap: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .gameplay {
+        width: 80%;
+        height: 65%;
+    }
+
+    .block {
+        font-size: 4rem;
+    }
+
+    .popup {
+        width: 80%;
+        height: 55%;
+        gap: 2rem;
+    }
+
+    .announceWinner {
+        text-align: center;
+        font-size: 3.5rem;
+        width: 80%;
+    }
+
+    .winnerPlayer {
+        font-size: 4rem;
+    }
+
+    .buttonBarMenu {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 3rem;
+    }
+}

@@ -8,140 +8,30 @@ body {
     margin: 0;
 }
 
-.forTitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15%;
-}
-
-.title {
+h1 {
     color: white;
     font-family: "Poppins", sans-serif;
     font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0;
 }
 
-.forMenu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 85%;
-}
-
-.menu {
+.chooseMode {
     display: flex;
     flex-direction: column;
-    width:30% ;
-    gap: 1rem;
+    gap: 4rem;
+    height: 100%;
+    justify-content: center;
 }
 
-label {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.25rem;
-}
-
-#firstname1::placeholder, #firstname2::placeholder {
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 0.75rem;
-    font-style: italic;
-}
-
-#firstname1, #firstname2 {
-    border: 2px solid white;
-    padding: 0.5rem 0 0.5rem 0.5rem;
-    color: white;
-    background-color: black;
-}
-
-.label1 {
-    color: #E30D00;
-}
-
-.label2 {
-    margin-top: 2rem;
-    color: #E0BB00;
-}
-
-.play {
+.mode1, .mode2 {
     background-color: black;
     border: 2px solid white;
     color: white;
     font-family: "Poppins", sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     padding: 1rem 0 1rem 0;
-    width: 50%;
+    width: 30%;
     align-self: center;
-    margin-top: 2rem;
-}
-
-@media screen and (max-width:767px) {
-    .menu {
-        width: 80%;
-        gap: 2rem;
-    }
-
-    label {
-        font-size: 1.5rem;
-    }
-
-    #firstname1, #firstname2 {
-        font-size: 1.25rem;
-    }
-
-    #firstname1::placeholder, #firstname2::placeholder {
-        font-size: 1rem;
-    }
-
-    .play {
-        font-size: 2rem;
-        padding: 1rem 1rem 1rem 1rem;
-        width: 70%;
-        margin-top: 3rem;
-    }
-    .label2 {
-        margin-top: 3rem;
-    }
-
-    h1 {
-        margin-bottom: 0;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width:1024px) {
-    .menu {
-        width: 80%;
-        gap: 3rem;
-    }
-
-    label {
-        font-size: 3rem;
-    }
-
-    #firstname1, #firstname2 {
-        font-size: 2rem;
-    }
-
-    #firstname1::placeholder, #firstname2::placeholder {
-        font-size: 1.5rem;
-    }
-
-    .play {
-        font-size: 3rem;
-        padding: 1rem 1rem 1rem 1rem;
-        width: 80%;
-        margin-top: 4rem;
-    }
-    .label2 {
-        margin-top: 4rem;
-    }
-
-    h1 {
-        margin-bottom: 0;
-    }
-
-    .title {
-        font-size: 4rem;
-    }
+    margin: 0;
 }

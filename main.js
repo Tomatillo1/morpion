@@ -1,25 +1,18 @@
-let buttonPlay = document.querySelector(".play");
+const buttonLocal = document.querySelector(".mode1");
+const buttonOnligne = document.querySelector(".mode2");
+let urlToChange = window.location.href
 
-buttonPlay.addEventListener("click", ()=>{
-    let player1 = document.getElementById("firstname1").value
-    let player2 = document.getElementById("firstname2").value
-    let lastUrl = window.location.href
-    let replaceUrl = lastUrl.replace(/\?.*/,'')
-    let finalUrl = replaceUrl.replace(/index.html/i, "jeu.html")
+buttonLocal.addEventListener("click", () => {
+ let replaceUrlmode1 = urlToChange.replace(/\?.*/,'')
+ location.href =  replaceUrlmode1.replace(/index.html/i, "modegame.html")
+})
 
-    let url = new URL(finalUrl)
-    let parameters = url.searchParams
-    parameters.set("name1", player1)
-    parameters.set("name2", player2)
-    url.search = parameters.toString()
-    let newUrl = url.toString()
-    if (player1 === "" && player2 === "") {
-        alert("Aucun joueur n'a été défini")
-    } else if (player1 === ""){
-        alert("Le joueur 1 n'a pas été défini")
-    } else if (player2 === ""){
-        alert("Le joueur 2 n'a pas été défini")
-    } else {
-        location.href = newUrl
-    }
-});
+buttonOnligne.addEventListener("click", () => {
+ let replaceUrlmode2 = urlToChange.replace(/\?.*/,'')
+ location.href = replaceUrlmode2.replace(/index.html/i, "onlineMode.html")
+})
+
+const url = "http://localhost:3000/"
+ fetch(url)
+.then(data=>data.text())
+.then(res=>{console.log(res)})

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100svh;
+    margin: 0;
+}
+
+.forTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+}
+
+.title {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+}
+
+.forMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width:30% ;
+    gap: 1rem;
+}
+
+label {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+}
+
+#firstname1::placeholder {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+#firstname1 {
+    border: 2px solid white;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    color: white;
+    background-color: black;
+}
+
+.label1 {
+    color: #000dff;
+}
+
+.play {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    padding: 1rem 0 1rem 0;
+    width: 50%;
+    align-self: center;
+    margin-top: 2rem;
+}
+
+.returnOnline {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    font-family: "Poppins", sans-serif ;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+@media screen and (max-width:767px) {
+    .menu {
+        width: 80%;
+        gap: 2rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    #firstname1 {
+        font-size: 1.25rem;
+    }
+
+    #firstname1::placeholder {
+        font-size: 1rem;
+    }
+
+    .play {
+        font-size: 2rem;
+        padding: 1rem 1rem 1rem 1rem;
+        width: 70%;
+        margin-top: 3rem;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    .returnOnline {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .menu {
+        width: 80%;
+        gap: 3rem;
+    }
+
+    label {
+        font-size: 3rem;
+    }
+
+    #firstname1 {
+        font-size: 2rem;
+    }
+
+    #firstname1::placeholder {
+        font-size: 1.5rem;
+    }
+
+    .play {
+        font-size: 3rem;
+        padding: 1rem 1rem 1rem 1rem;
+        width: 80%;
+        margin-top: 4rem;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .returnOnline {
+        font-size: 2rem;
+        padding: 0.25rem 1rem 0.25rem 1rem;
+        top: 30px;
+        left: 30px;
+    }
+}

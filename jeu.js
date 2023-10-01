@@ -49,6 +49,7 @@ buttons.forEach((button)=>{
 })
 
 function allLines () {
+    noWinner()
     checkLine1()
     checkLine2()
     checkLine3()
@@ -68,6 +69,7 @@ function checkLine1 () {
                 popup.style.display = "block"
                 winner1.innerHTML = name1
                 winner1.classList.remove("changeColor2")
+                winner1.classList.remove("changeColor3")
                 winner1.classList.add("changeColor")
                 let saveScore = document.querySelector(".score1").innerHTML
                 localStorage.setItem("theKey", saveScore)
@@ -81,6 +83,7 @@ function checkLine1 () {
                 popup.style.display = "block"
                 winner1.innerHTML = name2
                 winner1.classList.remove("changeColor")
+                winner1.classList.remove("changeColor3")
                 winner1.classList.add("changeColor2")
                 let saveScore2 = document.querySelector(".score2").innerHTML
                 localStorage.setItem("theKey2", saveScore2)
@@ -98,6 +101,7 @@ function checkLine2 () {
                 popup.style.display = "block"
                 winner1.innerHTML = name1
                 winner1.classList.remove("changeColor2")
+                winner1.classList.remove("changeColor3")
                 winner1.classList.add("changeColor")
                 let saveScore = document.querySelector(".score1").innerHTML
                 localStorage.setItem("theKey", saveScore)
@@ -111,6 +115,7 @@ function checkLine2 () {
                 popup.style.display = "block"
                 winner1.innerHTML = name2
                 winner1.classList.remove("changeColor")
+                winner1.classList.remove("changeColor3")
                 winner1.classList.add("changeColor2")
                 let saveScore2 = document.querySelector(".score2").innerHTML
                 localStorage.setItem("theKey2", saveScore2)
@@ -128,6 +133,7 @@ function checkLine3 () {
                 popup.style.display = "block"
                 winner1.innerHTML = name1
                 winner1.classList.remove("changeColor2")
+                winner1.classList.remove("changeColor3")
                 winner1.classList.add("changeColor")
                 let saveScore = document.querySelector(".score1").innerHTML
                 localStorage.setItem("theKey", saveScore)
@@ -141,6 +147,7 @@ function checkLine3 () {
                 popup.style.display = "block"
                 winner1.innerHTML = name2
                 winner1.classList.remove("changeColor")
+                winner1.classList.remove("changeColor3")
                 winner1.classList.add("changeColor2")
                 let saveScore2 = document.querySelector(".score2").innerHTML
                 localStorage.setItem("theKey2", saveScore2)
@@ -158,6 +165,7 @@ function checkLine4 () {
                 popup.style.display = "block"
                 winner1.innerHTML = name1
                 winner1.classList.remove("changeColor2")
+                winner1.classList.remove("changeColor3")
                 winner1.classList.add("changeColor")
                 let saveScore = document.querySelector(".score1").innerHTML
                 localStorage.setItem("theKey", saveScore)
@@ -171,6 +179,7 @@ function checkLine4 () {
                 popup.style.display = "block"
                 winner1.innerHTML = name2
                 winner1.classList.remove("changeColor")
+                winner1.classList.remove("changeColor3")
                 winner1.classList.add("changeColor2")
                 let saveScore2 = document.querySelector(".score2").innerHTML
                 localStorage.setItem("theKey2", saveScore2)
@@ -188,6 +197,7 @@ function checkLine5 () {
                 popup.style.display = "block"
                 winner1.innerHTML = name1
                 winner1.classList.remove("changeColor2")
+                winner1.classList.remove("changeColor3")
                 winner1.classList.add("changeColor")
                 let saveScore = document.querySelector(".score1").innerHTML
                 localStorage.setItem("theKey", saveScore)
@@ -201,6 +211,7 @@ function checkLine5 () {
                 popup.style.display = "block"
                 winner1.innerHTML = name2
                 winner1.classList.remove("changeColor")
+                winner1.classList.remove("changeColor3")
                 winner1.classList.add("changeColor2")
                 let saveScore2 = document.querySelector(".score2").innerHTML
                 localStorage.setItem("theKey2", saveScore2)
@@ -218,6 +229,7 @@ function checkLine6 () {
                 popup.style.display = "block"
                 winner1.innerHTML = name1
                 winner1.classList.remove("changeColor2")
+                winner1.classList.remove("changeColor3")
                 winner1.classList.add("changeColor")
                 let saveScore = document.querySelector(".score1").innerHTML
                 localStorage.setItem("theKey", saveScore)
@@ -231,6 +243,7 @@ function checkLine6 () {
                 popup.style.display = "block"
                 winner1.innerHTML = name2
                 winner1.classList.remove("changeColor")
+                winner1.classList.remove("changeColor3")
                 winner1.classList.add("changeColor2")
                 let saveScore2 = document.querySelector(".score2").innerHTML
                 localStorage.setItem("theKey2", saveScore2)
@@ -248,6 +261,7 @@ function checkLine7 () {
                 popup.style.display = "block"
                 winner1.innerHTML = name1
                 winner1.classList.remove("changeColor2")
+                winner1.classList.remove("changeColor3")
                 winner1.classList.add("changeColor")
                 let saveScore = document.querySelector(".score1").innerHTML
                 localStorage.setItem("theKey", saveScore)
@@ -261,6 +275,7 @@ function checkLine7 () {
                 popup.style.display = "block"
                 winner1.innerHTML = name2
                 winner1.classList.remove("changeColor")
+                winner1.classList.remove("changeColor3")
                 winner1.classList.add("changeColor2")
                 let saveScore = document.querySelector(".score1").innerHTML
                 localStorage.setItem("theKey", saveScore)
@@ -278,6 +293,7 @@ function checkLine8 () {
                 popup.style.display = "block"
                 winner1.innerHTML = name1
                 winner1.classList.remove("changeColor2")
+                winner1.classList.remove("changeColor3")
                 winner1.classList.add("changeColor")
                 let saveScore = document.querySelector(".score1").innerHTML
                 localStorage.setItem("theKey", saveScore)
@@ -291,12 +307,39 @@ function checkLine8 () {
                 popup.style.display = "block"
                 winner1.innerHTML = name2
                 winner1.classList.remove("changeColor")
+                winner1.classList.remove("changeColor3")
                 winner1.classList.add("changeColor2")
                 let saveScore2 = document.querySelector(".score2").innerHTML
                 localStorage.setItem("theKey2", saveScore2)
             }
         }
     }
+}
+
+function noWinner () {
+    if (buttons[0].innerHTML === "O" || buttons[0].innerHTML === "X") {
+        if (buttons[1].innerHTML === "O" || buttons[1].innerHTML === "X") {
+            if (buttons[2].innerHTML === "O" || buttons[2].innerHTML === "X") {
+                if (buttons[3].innerHTML === "O" || buttons[3].innerHTML === "X") {
+                    if (buttons[4].innerHTML === "O" || buttons[4].innerHTML === "X") {
+                        if (buttons[5].innerHTML === "O" || buttons[5].innerHTML === "X") {
+                            if (buttons[6].innerHTML === "O" || buttons[6].innerHTML === "X") {
+                                if (buttons[7].innerHTML === "O" || buttons[7].innerHTML === "X") {
+                                    if (buttons[8].innerHTML === "O" || buttons[8].innerHTML === "X") {
+                                            popup.style.display = "block"
+                                            winner1.innerHTML = "Aucun joueur"
+                                            winner1.classList.remove("changeColor")
+                                            winner1.classList.remove("changeColor2")
+                                            winner1.classList.add("changeColor3")
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
 }
 
 returnButton.addEventListener("click", () => {

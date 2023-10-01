@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jouez</title>
+    <link href="jeu.css" rel="stylesheet" />
+    <link href="responsivejeu.css" rel="stylesheet" />
+</head>
+<body>
+<div class="header">
+    <button type="button" class="return">Retour</button>
+    <h1>Morpion</h1>
+</div>
+<p class="turn">Au tour de <span class="changeColor"></span> de jouer :</p>
+<div class="popupContainer">
+    <div class="shadow"></div>
+    <div class="popup">
+        <p class="announceWinner">Le gagnant de la partie est :</p>
+        <p class="winnerPlayer"></p>
+        <div class="buttonBarMenu">
+            <button class="menuButton">Menu</button>
+            <button class="replay">Rejouer</button>
+        </div>
+    </div>
+</div>
+<div class="game">
+    <div class="playerOne">
+        <h2>J1</h2>
+        <p class="name1">Nomdujoueur1</p>
+        <p class="score1">0</p>
+    </div>
+    <div class="gameplay">
+        <div class="cases">
+            <button type="button" class="buttonOne block"></button>
+            <button type="button" class="buttonTwo block"></button>
+            <button type="button" class="buttonThree block"></button>
+            <button type="button" class="buttonFour block"></button>
+            <button type="button" class="buttonFive block"></button>
+            <button type="button" class="buttonSix block"></button>
+            <button type="button" class="buttonSeven block"></button>
+            <button type="button" class="buttonEight block"></button>
+            <button type="button" class="buttonNine block"></button>
+        </div>
+    </div>
+    <div class="playerTwo">
+        <h2>J2</h2>
+        <p class="name2">Nomdujoueur2</p>
+        <p class="score2">0</p>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="jeu.js"></script>
+</html>
